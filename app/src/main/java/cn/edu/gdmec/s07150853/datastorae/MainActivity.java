@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
             fos.write(str.getBytes());
             fos.flush();
             fos.close();
-            Toast.makeText(this,"SD卡写入成功",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"SD卡写入成功了",Toast.LENGTH_LONG).show();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
             fis.read(b,0,length);
             fis.close();
             tv1.setText(new String(b));
-            Toast.makeText(this,"SD卡读取成功",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"SD卡读取成功了",Toast.LENGTH_LONG).show();
         } catch (Exception e) {
             e.printStackTrace();
         }
